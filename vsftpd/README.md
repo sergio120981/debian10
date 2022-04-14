@@ -8,7 +8,7 @@
 
 
 <p>
-vsftpd.conf located in /etc/vsftpd.conf, config file of vsftpd
-vsftpd.virtual located in /etc/pam.d/vsftpd.virtual, for PAM authentication
-userdbadm downloaded in /usr/local/bin/, and with chmod +x permissions
+vsftpd.conf located in /etc/vsftpd.conf, config file of vsftpd<br />
+vsftpd.virtual located in /etc/pam.d/vsftpd.virtual, for PAM authentication<br />
+userdbadm downloaded in /usr/local/bin/, and with chmod +x permissions<br />
 </p>
