@@ -1,0 +1,12 @@
+Using xargs with parallelism and local function
+This commands create files using touch, in a "parallel way"
+
+#defining function
+myfun () { touch $1.txt; } 
+
+# exporting local function in order to use it inside xargs command
+export -f myfun
+
+# -P 0, If max-procs is  0,  xargs will run as many processes as possible at a time
+# -n 1, Use at most max-args arguments per command line
+time seq -w 1 10000 | xargs -P 0 -n 1 sh -c 'myfun $0'
